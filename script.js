@@ -28,12 +28,9 @@ function createHearts() {
     heart.style.animation = "fly 4s linear forwards";
     document.body.appendChild(heart);
     setTimeout(()=>heart.remove(),4000);
+ 
   }, 200);
-}
-
-startBtn.onclick = () => {
-  startScreen.style.display = 'none';
-  loveScreen.classList.remove('hidden');
+window.onload = () => {
   music.play();
   typeEffect(fullText);
   createHearts();
